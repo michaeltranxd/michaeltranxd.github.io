@@ -1,0 +1,100 @@
+:root {
+  --primary: #28adfb;
+  --primary-rgb: 40, 173, 251;
+  --primary-dark: #85d6fe;
+  --primary-dark-rgb: 133, 214, 254;
+  --primary-variant: #3700b3;
+  --background: #121212;
+  --on-background: #ffffff;
+  --on-background-rgba: 255, 255, 255;
+  --text-color-high-emphasis: rgba(var(--on-background-rgba), 0.87);
+  --text-color-medium-emphasis: rgba(var(--on-background-rgba), 0.6);
+  --text-color-disabled: rgba(var(--on-background-rgba), 0.38);
+
+  /*
+    00dp 	0%
+    01dp 	5%
+    02dp 	7%
+    03dp 	8%
+    04dp 	9%
+    06dp 	11%
+    08dp 	12%
+    12dp 	14%
+    16dp 	15%
+    24dp 	16%
+  */
+}
+
+/* Setting the background theme color and removing any padding/margin */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.navigation {
+  background-color: rgba(var(--on-background-rgba), 0.14);
+}
+
+.page1 {
+  height: 100%;
+  width: 100%;
+}
+
+.information {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  height: 40%;
+  width: 60%;
+}
+
+.portrait img {
+  max-width: 100%;
+  max-height: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border: solid 5px rgba(var(--primary-rgb), 0.6);
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.icons img {
+  background-color: var(--text-color-high-emphasis);
+  border: solid 3px rgba(var(--primary-rgb), 1);
+  max-height: 64px;
+  max-width: 64px;
+  outline: none;
+}
+
+.name {
+  color: var(--primary);
+}
+
+.description {
+  color: var(--text-color-high-emphasis);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 575.98px) {
+  .information {
+    top: 20%;
+    left: 15%;
+    height: 60%;
+    width: 70%;
+  }
+  .name {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 24px;
+  }
+}
