@@ -32,7 +32,10 @@
   max-width: 85%;
 }
 
-/* Setting the background theme color and removing any padding/margin */
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   height: 100%;
@@ -50,6 +53,11 @@ body {
 }
 
 .project-cards {
+}
+
+.card-deck {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-dark-mode {
@@ -186,6 +194,9 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-deck {
+    column-count: 4;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
