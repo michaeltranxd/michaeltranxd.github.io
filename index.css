@@ -10,6 +10,9 @@
   --text-color-high-emphasis: rgba(var(--on-background-rgba), 0.87);
   --text-color-medium-emphasis: rgba(var(--on-background-rgba), 0.6);
   --text-color-disabled: rgba(var(--on-background-rgba), 0.38);
+  font-size: 16px;
+  --background-12dp: rgba(var(--on-background-rgba), 0.14);
+  --background-02dp: rgba(var(--on-background-rgba), 0.07);
 
   /*
     00dp 	0%
@@ -25,6 +28,10 @@
   */
 }
 
+.w-85 {
+  max-width: 85%;
+}
+
 /* Setting the background theme color and removing any padding/margin */
 html,
 body {
@@ -34,23 +41,56 @@ body {
 
 body {
   background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project-cards {
+}
+
+.card-dark-mode {
+  background-color: var(--background-02dp);
+  margin: 1px;
+}
+
+.card-dark-mode-title {
+  color: var(--text-color-high-emphasis);
+}
+
+.card-dark-mode-text {
+  color: var(--text-color-medium-emphasis);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: contain;
+}
+
+.card-button {
+  background-color: rgba(var(--primary-rgb), 1);
+  color: black;
 }
 
 .navigation {
-  background-color: rgba(var(--on-background-rgba), 0.14);
+  background-color: var(--background-12dp);
 }
 
 .page1 {
-  height: 100%;
-  width: 100%;
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-width: 200px;
+  display: flex;
+  align-items: center;
 }
 
-.information {
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  height: 40%;
-  width: 60%;
+.page2 {
+  height: 100%;
+  width: 100%;
 }
 
 .portrait img {
@@ -59,11 +99,18 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  border: solid 5px rgba(var(--primary-rgb), 0.6);
+  border: solid 5px rgba(var(--primary-rgb), 0.8);
 }
 
 .icons a {
   text-decoration: none;
+  margin: 3px;
+  display: inline-block;
+}
+
+.icons a:hover {
+  filter: grayscale(78%) opacity(0.5);
+  transition: 500ms ease;
 }
 
 .icons img {
@@ -83,18 +130,64 @@ body {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media (max-width: 575.98px) {
-  .information {
-    top: 20%;
-    left: 15%;
-    height: 60%;
-    width: 70%;
+@media (orientation: portrait) and (max-width: 575.98px) {
+  .portrait img {
+    max-width: 100%;
+    max-height: 150px;
+    border: solid 5px rgba(var(--primary-rgb), 0.8);
   }
   .name {
-    font-size: 36px;
+    font-size: 30px;
+    font-weight: bold;
   }
 
   .description {
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: lighter;
   }
+  .card-img-top {
+    width: 100%;
+    height: 50vw;
+    object-fit: contain;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .portrait img {
+    max-width: 150px;
+    max-height: 100%;
+    border: solid 5px rgba(var(--primary-rgb), 0.8);
+  }
+  .name {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 22px;
+    font-weight: lighter;
+  }
+  .card-img-top {
+    width: 100%;
+    height: 45vw;
+    object-fit: contain;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-img-top {
+    width: 100%;
+    height: 35vw;
+    object-fit: contain;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
