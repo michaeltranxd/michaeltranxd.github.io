@@ -21,6 +21,7 @@
   <body>
     <title>Michael Tran</title>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top navigation">
       <a class="navbar-brand" href="">Michael Tran</a>
       <button
@@ -37,8 +38,8 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
+          <li class="nav-item">
+            <a class="nav-link active" href="#"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
@@ -46,13 +47,18 @@
             <a class="nav-link" href="#aboutme">About Me</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
         </ul>
       </div>
     </nav>
+    <!-- End of Navbar -->
 
-    <div class="page1 align-middle">
+    <!-- Portrait With Icons (Page1) -->
+    <div class="page1">
       <div class="container-fluid h-100">
         <div class="row h-20 justify-content-center align-items-center">
           <div class="portrait">
@@ -103,18 +109,69 @@
           </a>
         </div>
       </div>
-    </div> <!-- End of page 1-->
+    </div> 
+    <!-- End of page 1-->
 
-    <div class="page2" id="aboutme">
-      About Me Goes here
+    
+    <div class="nav-padding-link" id="aboutme"></div>
+    <div class="aboutme">
+      <div class="container-fluid h-auto w-70">
+        <!-- About me -->
+        <div class="row align-items-stretch h-100 text-wrap">
+          <div class="col-sm-4 d-flex justify-content-center align-items-baseline">
+            <h2 class="very-high-emphasis mb-4">About Me</h2>
+          </div>
+          <div class="col-sm-8 d-flex align-items-baseline">
+            <p class="high-emphasis w-100 text-wrap">Hello! I'm Michael Tran, an aspiring software engineer based in Chicago, IL. I have a passion for developing software to help improve daily lives such as automating tasks. Please check out some of my projects below!</p>
+          </div>
+        </div>
+      </div> <!-- End of page2 container 70%-->
+    </div> <!-- End of page2-->
+    
+    <div class="nav-padding-link" id="skills"></div>
+    <div class="skills">
+      <div class="container-fluid h-auto w-70">
+        <!-- Skills -->
+        <div class="row align-items-stretch h-100">
+          <div class="col-sm-4 h-10 d-flex justify-content-center align-items-baseline">
+            <h2 class="very-high-emphasis text-center mb-4">Skills</h2>
+          </div>
+          <div class="col-sm-8 align-items-start">
+            <p class="high-emphasis">Languages</p>
+            <br>
+            <p class="medium-emphasis">lgosalgeolgoaslga</p>
+            <br>
+            <p class="high-emphasis">Tools</p>
+            <br>
+            <p class="medium-emphasis">lgosalgeolgoaslga</p>
+            <br>
+            <p class="high-emphasis">Tools</p>
+            <br>
+            <p class="medium-emphasis">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div> <!-- End of row -->
+      </div> <!-- End of skills container 70%-->
+    </div> <!-- End of page2-->    
 
-    </div>
-
-    <div class="project" id="projects">
-      <h1 class="text-center">Projects</h1>
-      <div class="container-fluid w-85 project-cards">
+    <!-- Projects -->
+    <div class="nav-padding-link" id="projects"></div>
+    <div class="project">
+      <h1 class="very-high-emphasis text-center">Projects</h1>
+      <div class="container-fluid w-70">
         <div class="row align-items-stretch">
-          <div class="col-sm-6 col-lg-3 d-flex">
+          <div class="col-lg-6 col-xl-4 d-flex">
+            <div class="card card-dark-mode w-100">
+              <img class="card-img-top" src="hi.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
+                <p class="card-text card-dark-mode-text">This is a longer card with supported testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn card-button">View repository</a>
+              </div>
+            </div> <!-- End of card 1-->
+          </div> <!-- end of col -->
+          <div class="col-lg-6 col-xl-4 d-flex">
             <div class="card card-dark-mode">
               <img class="card-img-top" src="hi.png" alt="Card image cap">
               <div class="card-body">
@@ -126,46 +183,8 @@
               </div>
             </div> <!-- End of card 1-->
           </div> <!-- end of col -->
-          <div class="col-sm-6 col-lg-3 d-flex">
-            <div class="card card-dark-mode">
-              <img class="card-img-top" src="hi.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
-                <p class="card-text card-dark-mode-text">This is a longer card with supported test</p>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="btn card-button">View repository</a>
-              </div>
-            </div> <!-- End of card 2-->
-          </div> <!-- end of col -->
-          <div class="col-sm-6 col-lg-3 d-flex">
-            <div class="card card-dark-mode">
-              <img class="card-img-top" src="hi.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
-                <p class="card-text card-dark-mode-text">This is a longer card with supported test</p>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="btn card-button">View repository</a>
-              </div>
-            </div> <!-- End of card 3-->
-          </div> <!-- end of col -->
-          <div class="col-sm-6 col-lg-3 d-flex">
-            <div class="card card-dark-mode">
-              <img class="card-img-top" src="hi.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
-                <p class="card-text card-dark-mode-text">This is a longer card with supported test</p>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="btn card-button">View repository</a>
-              </div>
-            </div> <!-- End of card 4-->
-          </div> <!-- end of col -->
-        </div> <!-- end of row-->
-        <div class="row align-items-stretch">
-          <div class="col-sm-6 col-lg-3 d-flex">
-            <div class="card card-dark-mode">
+          <div class="col-lg-6 col-xl-4 d-flex">
+            <div class="card card-dark-mode w-100">
               <img class="card-img-top" src="hi.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
@@ -174,49 +193,49 @@
               <div class="card-footer">
                 <a href="#" class="btn card-button">View repository</a>
               </div>
-            </div> <!-- End of card 1-->
-          </div> <!-- end of col -->
-          <div class="col-sm-6 col-lg-3 d-flex">
-            <div class="card card-dark-mode">
-              <img class="card-img-top" src="hi.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
-                <p class="card-text card-dark-mode-text">This is a longer card with supported test</p>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="btn card-button">View repository</a>
-              </div>
             </div> <!-- End of card 2-->
           </div> <!-- end of col -->
-          <div class="col-sm-6 col-lg-3 d-flex">
-            <div class="card card-dark-mode">
+          <div class="col-lg-6 col-xl-4 d-flex">
+            <div class="card card-dark-mode w-100">
               <img class="card-img-top" src="hi.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
-                <p class="card-text card-dark-mode-text">This is a longer card with supported test</p>
+                <p class="card-text card-dark-mode-text">This is a longer card with supported testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
               </div>
               <div class="card-footer">
                 <a href="#" class="btn card-button">View repository</a>
               </div>
             </div> <!-- End of card 3-->
           </div> <!-- end of col -->
-          <div class="col-sm-6 col-lg-3 d-flex">
-            <div class="card card-dark-mode">
+          <div class="col-lg-6 col-xl-4 d-flex">
+            <div class="card card-dark-mode w-100">
               <img class="card-img-top" src="hi.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
-                <p class="card-text card-dark-mode-text">This is a longer card with supported test</p>
+                <p class="card-text card-dark-mode-text">This is a longer card with supported testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
               </div>
               <div class="card-footer">
                 <a href="#" class="btn card-button">View repository</a>
               </div>
             </div> <!-- End of card 4-->
+          </div> <!-- end of col -->
+          <div class="col-lg-6 col-xl-4 d-flex">
+            <div class="card card-dark-mode w-100">
+              <img class="card-img-top" src="hi.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
+                <p class="card-text card-dark-mode-text">This is a longer card with supported testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn card-button">View repository</a>
+              </div>
+            </div> <!-- End of card 5-->
           </div> <!-- end of col -->
         </div> <!-- end of row-->
       </div> <!-- end of card container -->
-    </div>
-    
+    </div> <!-- End of Projects -->
 
+    <div class="nav-padding-link" id="contact"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -235,5 +254,13 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function(){
+          $('.nav-link').click(function(){
+              $('.nav-link').removeClass('active');
+              $(this).addClass('active');
+          });
+      });
+    </script>
   </body>
 </html>
