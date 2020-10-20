@@ -56,25 +56,15 @@
   max-height: 0%;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
+.default-mouse {
+  cursor: default;
 }
 
-body {
-  background-color: var(--background);
-  margin: 0;
-  padding: 0;
-}
-
-.navigation {
-  background-color: gray;
-}
-
-.nav-link {
+.click-mouse {
   cursor: pointer;
+}
 
+.no-highlight {
   /* Source: https://stackoverflow.com/questions/7018324/how-to-stop-highlighting-of-a-div-element-when-double-clicking */
   -webkit-user-select: none; /* Chrome/Safari */
   -moz-user-select: none; /* Firefox */
@@ -85,12 +75,56 @@ body {
   user-select: none;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+.behind-navigation {
+  background-color: var(--background);
+  height: 56px;
+}
+
+.navigation {
+  background-color: #333333;
+}
+
+.nav-link {
+  color: var(--on-background);
+}
+
+.navbar {
+  border-bottom: 2px solid var(--primary);
+}
+
+.navbar-brand {
+  color: var(--on-background);
+}
+
+.navbar-toggler-icon {
+  color: var(--on-background);
+}
+
+/* These are the lines that seperate sections and provide us the margin for the navbar */
 .nav-padding-link {
   height: 60px;
   min-width: 330px;
   width: 100%;
   border-bottom: 5px solid var(--primary);
   /* border: 5px solid blue;*/
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-dark);
 }
 
 /* Page 1 section */
@@ -162,6 +196,35 @@ body {
   /* border: 2px solid yellow; */
 }
 
+.skillboxes {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 5px solid green; */
+}
+
+.skillboxes h4 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.badge-skills {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+/* Tooltip recoloring helped by stackoverflow: https://stackoverflow.com/questions/36143382/re-color-tooltip-in-bootstrap-4 */
+.tooltip-inner {
+  background-color: #5264e9;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::before,
+.tooltip.bs-tooltip-top .arrow::before {
+  /* margin-left: -3px;
+  content: "";
+  border-width: 5px 5px 0; */
+  border-top-color: #5264e9;
+}
+
 .skills .row {
   /* border: 5px solid purple; */
 }
@@ -193,22 +256,53 @@ body {
 }
 
 .card-dark-mode-title {
-  color: var(--text-color-high-emphasis);
+  color: var(--text-color-very-high-emphasis);
 }
 
 .card-dark-mode-text {
   color: var(--text-color-medium-emphasis);
 }
 
+.card-header-with-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.card-header-with-info .card-title {
+  margin-bottom: 0px;
+}
+
 .card-img-top {
   width: 100%;
   height: 15vw;
   object-fit: contain;
+  border-bottom: 2px solid var(--primary-dark);
+}
+
+.card-body {
+  border-bottom: 2px solid var(--primary-dark);
 }
 
 .card-button {
   background-color: rgba(var(--primary-rgb), 1);
   color: black;
+}
+
+.card-skills {
+  margin: 5px;
+}
+
+.card-footer .btn {
+  margin-bottom: 5px;
+}
+
+/* contact me section */
+.contactme {
+  min-width: 330px;
+  width: 100%;
+  margin-top: 56px;
+  /* border: 2px solid yellow; */
 }
 
 /* Extra small devices (phones, 600px and down) */

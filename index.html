@@ -16,6 +16,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- Lato font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet"> 
+
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -23,7 +26,7 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top navigation">
-      <a class="navbar-brand" href="">Michael Tran</a>
+      <span class="navbar-brand default-mouse no-highlight">Michael Tran</span>
       <button
         class="navbar-toggler"
         type="button"
@@ -38,19 +41,20 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <span class="nav-link"
-              >Home</span
-            >
+          <li class="nav-item click-mouse no-highlight">
+            <span class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">Home</span>
           </li>
-          <li class="nav-item">
-            <span class="nav-link">About Me</span>
+          <li class="nav-item click-mouse no-highlight" >
+            <span class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">About Me</span>
           </li>
-          <li class="nav-item">
-            <span class="nav-link">Skills</span>
+          <li class="nav-item click-mouse no-highlight">
+            <span class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">Skills</span>
           </li>
-          <li class="nav-item">
-            <span class="nav-link">Projects</span>
+          <li class="nav-item click-mouse no-highlight">
+            <span class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">Projects</span>
+          </li>
+          <li class="nav-item click-mouse no-highlight">
+            <span class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show">Contact Me</span>
           </li>
         </ul>
       </div>
@@ -119,10 +123,11 @@
         <!-- About me -->
         <div class="row align-items-stretch h-100 text-wrap">
           <div class="col-sm-4 d-flex justify-content-center align-items-baseline">
-            <h2 class="very-high-emphasis mb-4">About Me</h2>
+            <h2 class="very-high-emphasis mb-4">A<span class="underline">bout M</span>e</h2>
           </div>
-          <div class="col-sm-8 d-flex align-items-baseline">
-            <p class="high-emphasis w-100 text-wrap">Hello! I'm Michael Tran, an aspiring software engineer based in Chicago, IL. I have a passion for developing software to help improve daily lives such as automating tasks. Please check out some of my projects below!</p>
+          <div class="col-sm-8 align-items-baseline">
+            <p class="high-emphasis w-100 text-wrap">Hello, I'm Michael Tran, an aspiring software engineer based in Chicago, focused in developing software to improve daily lives. Please have a look at some of my open source projects below!</p>
+            <p class="high-emphasis w-100 text-wrap">In spring 2020, I graduated with highest honors from <abbr title="University of Illinois at Chicago">UIC</abbr> with a BS in Computer Science. I am currently working on personal projects and continuing to learn and develop my skills as a computer scientist. </p>
           </div>
         </div>
       </div> <!-- End of page2 container 70%-->
@@ -134,20 +139,42 @@
         <!-- Skills -->
         <div class="row align-items-stretch h-100">
           <div class="col-sm-4 h-10 d-flex justify-content-center align-items-baseline">
-            <h2 class="very-high-emphasis text-center mb-4">Skills</h2>
+            <h2 class="very-high-emphasis mb-4">S<span class="underline">kill</span>s</h2>
           </div>
           <div class="col-sm-8 align-items-start">
-            <p class="high-emphasis">Languages</p>
+            <p class="high-emphasis">Languages <span class="badge badge-pill badge-skills" data-toggle="tooltip" data-placement="top" title="⚬⚬⚬⚬⚬ - Novice, ●●●●● Expert">?</span></p>
+            <div class="skillboxes">
+              <h4><span class="badge badge-pill badge-skills" data-toggle="tooltip" data-placement="top" title="●●●●⚬">Java</span></h4>
+              <h4><span class="badge badge-pill badge-skills" data-toggle="tooltip" data-placement="top" title="●●●●⚬">JavaScript</span></h4>
+              <h4><span class="badge badge-pill badge-skills" data-toggle="tooltip" data-placement="top" title="●●●⚬⚬">C</span></h4>
+              <h4><span class="badge badge-pill badge-skills" data-toggle="tooltip" data-placement="top" title="●●●⚬⚬">C#</span></h4>
+              <h4><span class="badge badge-pill badge-skills" data-toggle="tooltip" data-placement="top" title="●●●⚬⚬">C++</span></h4>
+              <h4><span class="badge badge-pill badge-skills" data-toggle="tooltip" data-placement="top" title="●●●⚬⚬">CSS</span></h4>
+              <h4><span class="badge badge-pill badge-skills" data-toggle="tooltip" data-placement="top" title="●●●⚬⚬">HTML</span></h4>
+              <h4><span class="badge badge-pill badge-skills" data-toggle="tooltip" data-placement="top" title="●●⚬⚬⚬">Python</span></h4>
+            </div>
             <br>
-            <p class="medium-emphasis">lgosalgeolgoaslga</p>
+            <p class="high-emphasis">Frameworks and Platforms</p>
+
+            <div class="skillboxes">
+              <h4><span class="badge badge-pill badge-skills">React</span></h4>
+              <h4><span class="badge badge-pill badge-skills">Bootstrap</span></h4>
+              <h4><span class="badge badge-pill badge-skills">Node.js</span></h4>
+              <h4><span class="badge badge-pill badge-skills">Discord.js</span></h4>
+              <h4><span class="badge badge-pill badge-skills">Arduino</span></h4>              
+            </div>
             <br>
             <p class="high-emphasis">Tools</p>
-            <br>
-            <p class="medium-emphasis">lgosalgeolgoaslga</p>
-            <br>
-            <p class="high-emphasis">Tools</p>
-            <br>
-            <p class="medium-emphasis">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="skillboxes">
+              <h4><span class="badge badge-pill badge-skills">Git</span></h4>
+              <h4><span class="badge badge-pill badge-skills">Windows</span></h4>
+              <h4><span class="badge badge-pill badge-skills">Visual Studio Code</span></h4>
+              <h4><span class="badge badge-pill badge-skills">Microsoft Excel</span></h4>
+              <h4><span class="badge badge-pill badge-skills">Processing IDE</span></h4>
+              <h4><span class="badge badge-pill badge-skills">Discord</span></h4>
+              <h4><span class="badge badge-pill badge-skills">Slack</span></h4>
+              <h4><span class="badge badge-pill badge-skills">Microsoft Teams</span></h4>              
+            </div>
           </div>
         </div> <!-- End of row -->
       </div> <!-- End of skills container 70%-->
@@ -156,86 +183,128 @@
     <!-- Projects -->
     <div class="nav-padding-link" id="projects"></div>
     <div class="project">
-      <h1 class="very-high-emphasis text-center">Projects</h1>
+      <h1 class="very-high-emphasis text-center">P<span class="underline">roject</span>s</h1>
       <div class="container-fluid w-70">
         <div class="row align-items-stretch">
           <div class="col-lg-6 col-xl-4 d-flex">
             <div class="card card-dark-mode w-100">
-              <img class="card-img-top" src="hi.png" alt="Card image cap">
+              <img class="card-img-top" src="worklifebalance.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
-                <p class="card-text card-dark-mode-text">This is a longer card with supported testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+                <div class="card-header-with-info justify-content-center">
+                  <h5 class="card-title card-dark-mode-title">Work Life Balance</h5>
+                </div>
+                <div class="card-header-with-info justify-content-center">
+                  <span class="badge badge-pill badge-skills card-skills">C#</span>
+                  <span class="badge badge-pill badge-skills card-skills">Project Lead</span>
+                  <span class="badge badge-pill badge-skills card-skills">Game Design/Development</span>
+                </div>
+                
+                <p class="card-text card-dark-mode-text">Work Life Balance is a 3d healthcare awareness serious game designed and developed by two CS colleagues and myself, in collaboration with the UIC College of Pharmacy Memes for Health under Dr. Younge and Faiz Rehman. The project was written in C# using Unity game engine and every aspect of the design was documented in a design document found on GitHub. I coordinated with the group to achieve important milestone deadlines and combined seperate code, leading to praise from the College of Pharmacy members on the end product.</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn card-button">View repository</a>
-              </div>
-            </div> <!-- End of card 1-->
-          </div> <!-- end of col -->
-          <div class="col-lg-6 col-xl-4 d-flex">
-            <div class="card card-dark-mode">
-              <img class="card-img-top" src="hi.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
-                <p class="card-text card-dark-mode-text">This is a longer card with supported testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
-              </div>
-              <div class="card-footer">
-                <a href="#" class="btn card-button">View repository</a>
+                <a href="https://github.com/michaeltranxd/Work-Life-Balance" class="btn card-button" target="_blank" role="button">View repository</a>
               </div>
             </div> <!-- End of card 1-->
           </div> <!-- end of col -->
           <div class="col-lg-6 col-xl-4 d-flex">
             <div class="card card-dark-mode w-100">
-              <img class="card-img-top" src="hi.png" alt="Card image cap">
+              <img class="card-img-top" src="visualization.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
-                <p class="card-text card-dark-mode-text">This is a longer card with supported testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+                <div class="card-header-with-info justify-content-center">
+                  <h5 class="card-title card-dark-mode-title text-center">Multi-Ethnicity Head and Neck Cancer Patient Repository</h5>
+                </div>
+                <div class="card-header-with-info justify-content-center">
+                  <span class="badge badge-pill badge-skills card-skills">JavaScript</span>
+                  <span class="badge badge-pill badge-skills card-skills">D3.js</span>
+                </div>
+                
+                <p class="card-text card-dark-mode-text">Research done under Professor Marai to develop a tool to explore the UIC Head and Neck Cancer dataset. The tool displays the demographics and cancer staging for the subset of patients that reside in Chicago. Written in JavaScript and D3.js library to help generate visuals.</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn card-button">View repository</a>
+                <a href="https://github.com/michaeltranxd/Work-Life-Balance" class="btn card-button" target="_blank" role="button">View repository</a>
+                <a href="https://mtt2.people.uic.edu/research.html" class="btn card-button" target="_blank" role="button">View demo</a>
               </div>
             </div> <!-- End of card 2-->
           </div> <!-- end of col -->
           <div class="col-lg-6 col-xl-4 d-flex">
             <div class="card card-dark-mode w-100">
-              <img class="card-img-top" src="hi.png" alt="Card image cap">
+              <img class="card-img-top" src="discordbot.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
-                <p class="card-text card-dark-mode-text">This is a longer card with supported testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+                <div class="card-header-with-info justify-content-center">
+                  <h5 class="card-title card-dark-mode-title text-center">Discord Bot</h5>
+                </div>
+                <div class="card-header-with-info justify-content-center">
+                  <span class="badge badge-pill badge-skills card-skills">JavaScript</span>
+                  <span class="badge badge-pill badge-skills card-skills">Node.js</span>
+                  <span class="badge badge-pill badge-skills card-skills">Discord.js</span>
+                </div>
+                <p class="card-text card-dark-mode-text"> Discord bot developed using discord.js API and node.js. Features radio streaming from listen.moe (both korean and japanese), basic polling system, and Runescape api calls such as Grand Exchange item prices and hiscores.</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn card-button">View repository</a>
+                <a href="https://github.com/michaeltranxd/discord-bot" class="btn card-button" target="_blank" role="button">View repository</a>
               </div>
             </div> <!-- End of card 3-->
-          </div> <!-- end of col -->
+          </div> <!-- end of col -->          
           <div class="col-lg-6 col-xl-4 d-flex">
             <div class="card card-dark-mode w-100">
-              <img class="card-img-top" src="hi.png" alt="Card image cap">
+              <img class="card-img-top" src="website.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
-                <p class="card-text card-dark-mode-text">This is a longer card with supported testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+                <div class="card-header-with-info justify-content-center">
+                  <h5 class="card-title card-dark-mode-title text-center">Personal Website</h5>
+                </div>
+                <div class="card-header-with-info justify-content-center">
+                  <span class="badge badge-pill badge-skills card-skills">JavaScript</span>
+                  <span class="badge badge-pill badge-skills card-skills">HTML/CSS</span>
+                  <span class="badge badge-pill badge-skills card-skills">Bootstrap</span>
+                </div>
+                
+                <p class="card-text card-dark-mode-text">Personal website showcasing my portfolio and work that I have done. Developed using Bootstrap 4, HTML, CSS, and JavaScript</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn card-button">View repository</a>
+                <a class="btn card-button disabled" role="button" aria-disabled="true">Code not available yet</a>
               </div>
             </div> <!-- End of card 4-->
-          </div> <!-- end of col -->
+          </div> <!-- end of col -->          
           <div class="col-lg-6 col-xl-4 d-flex">
             <div class="card card-dark-mode w-100">
-              <img class="card-img-top" src="hi.png" alt="Card image cap">
+              <img class="card-img-top" src="bittorrent.png" alt="Card image cap">
               <div class="card-body">
-                <h5 class="card-title card-dark-mode-title">Card title that wraps to a new line</h5>
-                <p class="card-text card-dark-mode-text">This is a longer card with supported testfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+                <div class="card-header-with-info justify-content-center">
+                  <h5 class="card-title card-dark-mode-title text-center">Operation-BitTorrent</h5>
+                </div>
+                <div class="card-header-with-info justify-content-center">
+                  <span class="badge badge-pill badge-skills card-skills">C</span>
+                  <span class="badge badge-pill badge-skills card-skills">Networking</span>
+                  <span class="badge badge-pill badge-skills card-skills">Sockets</span>
+                </div>
+                <p class="card-text card-dark-mode-text">Aimed to explore a centralized P2P(peer to peer) file sharing network using sockets and mmap in C. Able to transfer files over the network. Worked on designing packet protocol for information sharing between peers.</p>
               </div>
               <div class="card-footer">
-                <a href="#" class="btn card-button">View repository</a>
+                <a href="https://github.com/michaeltranxd/Operation-BitTorrent" class="btn card-button" target="_blank" role="button">View repository</a>
               </div>
-            </div> <!-- End of card 5-->
-          </div> <!-- end of col -->
+            </div> <!-- End of card 5 -->
+          </div> <!-- end of col -->                   
         </div> <!-- end of row-->
       </div> <!-- end of card container -->
     </div> <!-- End of Projects -->
 
-    <div class="nav-padding-link" id="contact"></div>
+    <div class="nav-padding-link" id="contactme"></div>
+    <div class="contactme">
+      <div class="container-fluid h-auto w-70">
+        <!-- Contact me -->
+        <div class="row align-items-stretch h-100 text-wrap">
+          <div class="col-sm-4 d-flex justify-content-center align-items-baseline">
+            <h2 class="very-high-emphasis mb-4">C<span class="underline">ontact M</span>e</h2>
+          </div>
+          <div class="col-sm-8 align-items-baseline">
+            <div class="container-fluid h-auto">
+              <p class="high-emphasis w-100 text-wrap">Currently under construction. Check back in a few and maybe it'll work. Send me an email if you'd like to contact as its getting worked on (email icon in Home)</p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End of page2 container 70%-->
+    </div> <!-- End of page2-->
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -258,6 +327,8 @@
     </script>
     <script>
       let manualScrolling = true;
+
+      // Execute When DOM is ready; Assign nav-link active
       $(document).ready(function(){
           $('.nav-link').click(function(){
             manualScrolling = false;
@@ -268,27 +339,20 @@
             $(this).addClass('active');
 
             // Get position of the navlink redirect, it will be #[navLink.innerText]; whatever the text of the navlink in format #lowercasename.
-            let navLinkId = "#" + (this.innerText.replace(/ /g, '').toLowerCase());          
+            let navLinkId = "#" + (this.innerText.replace(/ /g, '').toLowerCase());
             let navLinkRef = ($(navLinkId));
             let navLinkTopLocation = navLinkRef.offset().top
             $("html, body").stop().animate({
               scrollTop: `${navLinkTopLocation}`
             }, 500, function(){
               // Animation complete
-              console.log("animation complete")
               manualScrolling = true;
             })
           });
       });
 
-      
-      $(window).scroll(function() {
-
-      });
-
       // Event fired when DOM is done rendering
       $(window).promise().done(()=>{
-        console.log("hello");
         setActiveNavLink();
       })
 
@@ -297,6 +361,11 @@
         if(manualScrolling)
             setActiveNavLink();
       });
+
+      // Add tooltips
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
 
       function setActiveNavLink(){
         // Get children of navbar
@@ -308,22 +377,24 @@
           // Grab innerText and convert into the "id" scheme we are using which is: Lowercase + no space
           // Then append with # to grab href
           let navLinkId = "#" + (navLink.innerText.replace(/ /g, '').toLowerCase());
-          console.log(navLinkId)
-          
           let navLinkRef = ($(navLinkId));
           let navLinkTopLocation = navLinkRef.offset().top
           let scrollTopLocation = $(window).scrollTop();
 
           // Update the currNavLink to the current navLink we are iterating since we are beneath it
-          if(scrollTopLocation >= navLinkTopLocation)
+          if(scrollTopLocation >= navLinkTopLocation - 50)
             currNavLink = navLink;
 
           // Remove all active to set active outside 'each' function
           $(navLink).removeClass('active');
         })
 
-        if(currNavLink)
+        if($(window).scrollTop() + $(window).height() == $(document).height()) {
+          ($(navLinks[navLinks.length - 1])).addClass('active');
+          
+        } else if(currNavLink){
           $(currNavLink).addClass('active');
+        }
       }
     </script>
   </body>
