@@ -1,6 +1,6 @@
 :root {
-  --primary: #28adfb;
-  --primary-rgb: 40, 173, 251;
+  --primary: #3db1d9;
+  --primary-rgb: 57, 177, 247;
   --primary-dark: #85d6fe;
   --primary-dark-rgb: 133, 214, 254;
   --primary-variant: #3700b3;
@@ -214,7 +214,7 @@ body {
 
 /* Tooltip recoloring helped by stackoverflow: https://stackoverflow.com/questions/36143382/re-color-tooltip-in-bootstrap-4 */
 .tooltip-inner {
-  background-color: #5264e9;
+  background-color: #5500da;
 }
 
 .tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::before,
@@ -222,7 +222,7 @@ body {
   /* margin-left: -3px;
   content: "";
   border-width: 5px 5px 0; */
-  border-top-color: #5264e9;
+  border-top-color: #5500da;
 }
 
 .skills .row {
@@ -242,7 +242,7 @@ body {
 }
 
 .project h1 {
-  padding: 10px;
+  padding: 30px 0px;
 }
 
 .card-deck {
