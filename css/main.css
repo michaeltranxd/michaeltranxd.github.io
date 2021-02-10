@@ -1,8 +1,8 @@
 :root {
   --primary: #0496e5;
   --primary-rgb: 4, 150, 229;
-  --primary-dark: #84a7f9;
-  --primary-dark-rgb: 133, 214, 254;
+  --primary-dark: #768add;
+  --primary-dark-rgb: 118, 138, 221;
   --primary-variant: #3700b3;
   --background: #121212;
   --on-background: #ffffff;
@@ -214,7 +214,7 @@ body {
 
 /* Tooltip recoloring helped by stackoverflow: https://stackoverflow.com/questions/36143382/re-color-tooltip-in-bootstrap-4 */
 .tooltip-inner {
-  background-color: #5500da;
+  background-color: #768add;
 }
 
 .tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::before,
@@ -222,7 +222,7 @@ body {
   /* margin-left: -3px;
   content: "";
   border-width: 5px 5px 0; */
-  border-top-color: #5500da;
+  border-top-color: #768add;
 }
 
 .skills .row {
